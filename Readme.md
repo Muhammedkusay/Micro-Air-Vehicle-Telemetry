@@ -90,6 +90,7 @@ Each vehicle has a unique MAVLink `system_id`.
 ## Api Endpoints
 
 * /vehicles
+* /vehicles/create
 * /vehicles/{vehicle}
 * /vehicles/{vehicle}/flights
 * /vehicles/{vehicle}/flights

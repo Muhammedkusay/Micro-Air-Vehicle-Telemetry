@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Flights from "./pages/Flights";
 import FlightDetail from "./pages/FlightDetail";
 import Vehicles from "./pages/Vehicles";
+import CreateVehicle from "./pages/CreateVehicle";
 
 function App() {
     return (
@@ -20,6 +21,11 @@ function App() {
                 <Route
                     path="/vehicles"
                     element={<Vehicles />}
+                />
+
+                <Route
+                    path="/vehicles/create"
+                    element={<CreateVehicle />}
                 />
 
                 <Route

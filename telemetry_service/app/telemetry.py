@@ -42,12 +42,12 @@ def update_telemetry(msg):
         )
 
     elif msg_type == "GLOBAL_POSITION_INT":
-        telemetry["latitude"] = msg.lat / 1e7
+        telemetry["latitude"] = msg.lat / 1e7 # 361.23
         telemetry["longitude"] = msg.lon / 1e7
         telemetry["altitude"] = msg.relative_alt / 1000.0
 
     elif msg_type == "ATTITUDE":
-        telemetry["roll"] = msg.roll * 57.2958
+        telemetry["roll"] = msg.roll * 57.2958 #3.14 
         telemetry["pitch"] = msg.pitch * 57.2958
         telemetry["yaw"] = msg.yaw * 57.2958
 

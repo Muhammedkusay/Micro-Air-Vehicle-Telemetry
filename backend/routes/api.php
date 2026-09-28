@@ -8,6 +8,7 @@ use App\Http\Controllers\FlightController;
 
 Route::get('/vehicles', [VehicleController::class, 'index']);
 Route::get('/vehicles/{vehicle}', [VehicleController::class, 'show']);
+Route::post('/vehicles/create', [VehicleController::class, 'store']);
 
 Route::post('/vehicles/{vehicle}/flights', [FlightController::class, 'store']);
 Route::get('/vehicles/{vehicle}/flights', [FlightController::class, 'index']);

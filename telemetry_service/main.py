@@ -13,7 +13,7 @@ def run_websocket():
 # Start websocket server
 websocket_thread = threading.Thread(
     target=run_websocket,
-    daemon=True
+    daemon=True # thread automatically stops when main python program stops
 )
 
 websocket_thread.start()

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useApi } from "../hooks/useApi";
 import Error from "../components/Error";
 import Loading from "../components/Loading";
@@ -34,6 +34,7 @@ export default function Vehicles() {
             <Header />
             <div className="w-full md:w-[90%] mx-auto">
                 <h1 className="w-fit mx-auto text-lg py-3">Vehicles</h1>
+                <Link to={'/vehicles/create'} className="block w-fit mb-2 px-5 pt-0.5 pb-1.5 text-sm text-white bg-slate-800 hover:bg-slate-600 rounded-md">Add<span className="pl-1.5 text-lg">+</span></Link>
                 <div className="flex flex-col gap-2">
                 {
                     vehicles.length == 0 
